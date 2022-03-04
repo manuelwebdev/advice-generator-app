@@ -9,7 +9,7 @@ const fetchAdvice = async () => {
   // insert html template into main element on page
   mainContent.innerHTML = `<div class="card">
   <h3 class="adviceNumber">advice #${data.slip.id}</h3>
-  <h2 class="advice">"${data.slip.advice}"</h2>
+  <h1 class="advice">"${data.slip.advice}"</h1>
   <div class="divider">
     <svg width="295" height="16" xmlns="http://www.w3.org/2000/svg">
       <g fill="none" fill-rule="evenodd">
