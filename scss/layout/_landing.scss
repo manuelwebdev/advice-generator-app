@@ -1,0 +1,56 @@
+body {
+  background-color: $dark-blue;
+  main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .card {
+      max-width: 400px;
+      padding: 2rem;
+      background-color: $dark-grayish-blue;
+      border-radius: 15px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .adviceNumber,
+      .advice {
+        margin-bottom: 1.5rem;
+      }
+      .adviceNumber {
+        color: $neon-green;
+        font-size: 15px;
+        font-family: $font-quote;
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+      .advice {
+        color: $light-cyan;
+        font-family: $family;
+        font-size: $font-quote;
+      }
+      .divider {
+        svg {
+        }
+      }
+      .adviceBtn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: $neon-green;
+        border: none;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+
+        position: relative;
+        bottom: -50px;
+        svg {
+        }
+      }
+    }
+  }
+}
