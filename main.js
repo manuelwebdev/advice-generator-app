@@ -2,20 +2,14 @@ const url = "https://api.adviceslip.com/advice"
 const mainContent = document.querySelector(".mainContent")
 
 const fetchAdvice = async () => {
-  let container = document.getElementsByClassName("main")
-  let adviceId = document.getElementsByClassName("adviceNumber")
-  let advice = document.getElementsByClassName("advice")
-
+  // fetch our data and get data in json
   const res = await fetch(url)
   const data = await res.json()
 
-  displayAdvice(data)
-}
-
-const displayAdvice = (data) => {
-  const adviceHTML = `<div class="card">
+  // insert html template into main element on page
+  mainContent.innerHTML = `<div class="card">
   <h3 class="adviceNumber">advice #${data.slip.id}</h3>
-  <h2 class="advice">${data.slip.advice}</h2>
+  <h2 class="advice">"${data.slip.advice}"</h2>
   <div class="divider">
     <svg width="295" height="16" xmlns="http://www.w3.org/2000/svg">
       <g fill="none" fill-rule="evenodd">
@@ -35,10 +29,7 @@ const displayAdvice = (data) => {
       />
     </svg>
   </button>
-</div>`
-
-  mainContent.innerHTML = adviceHTML
-  console.log(adviceHTML)
+  </div>`
 }
 
 fetchAdvice()
