@@ -22,13 +22,10 @@
     <title>Frontend Mentor | Advice generator app</title>
   </head>
   <body>
-    <main>
+    <main class="main">
       <div class="card">
-        <h3 class="adviceNumber">ADVICE #159</h3>
-        <h2 class="advice">
-          "It is easy to sit up and take notice, what's difficult is getting up
-          and taking action."
-        </h2>
+        <h3 class="adviceNumber"></h3>
+        <h2 class="advice"></h2>
         <div class="divider">
           <svg width="295" height="16" xmlns="http://www.w3.org/2000/svg">
             <g fill="none" fill-rule="evenodd">
@@ -40,8 +37,8 @@
             </g>
           </svg>
         </div>
-        <button class="adviceBtn">
-          <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+        <button class="adviceBtn" onclick="fetchAdvice()">
+          <svg viewBox="-15 -15 55 55" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M20 0H4a4.005 4.005 0 0 0-4 4v16a4.005 4.005 0 0 0 4 4h16a4.005 4.005 0 0 0 4-4V4a4.005 4.005 0 0 0-4-4ZM7.5 18a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z"
               fill="#202733"

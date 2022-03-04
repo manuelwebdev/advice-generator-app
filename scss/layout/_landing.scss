@@ -21,8 +21,8 @@ body {
       }
       .adviceNumber {
         color: $neon-green;
-        font-size: 15px;
-        font-family: $font-quote;
+        font-size: 12px;
+        font-family: $family;
         font-weight: 400;
         text-transform: uppercase;
       }
@@ -30,8 +30,11 @@ body {
         color: $light-cyan;
         font-family: $family;
         font-size: $font-quote;
+        font-kerning: 2px;
+        text-align: center;
       }
       .divider {
+        margin-bottom: -40px;
         svg {
         }
       }
@@ -47,7 +50,7 @@ body {
         border-radius: 50%;
 
         position: relative;
-        bottom: -50px;
+        bottom: -70px;
         svg {
         }
       }
